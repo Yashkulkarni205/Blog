@@ -1,0 +1,23 @@
+{% extends 'myapp/base.html' %}
+{% block container %}
+<div class="detail-container">
+    <div>
+        <div class="image">
+            <img src="{{ article.image.url }}" alt="">
+        </div>
+        <div class="detail">
+            <span style="font-size:38px;">{{ article.name }}</span>
+            <span style="display:block;">-by {{ article.user.username }}</span>
+            
+            <div>
+                {% if article.user == request.user %}
+                <a style="background-color: rgb(204, 24, 0);" href="{% url 'delete-article' article.id %}">Delete</a>
+                <a style="background-color: rgb(57, 77, 94);" href="{% url 'update-article' article.id %}">Update</a>
+                {% endif %}
+            </div>
+            <span style="font-size:25px; display:block;">Description</span>
+            <span> {{ article.description }}</span>
+        </div>
+    </div>
+</div>
+{% endblock container %}

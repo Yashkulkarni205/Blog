@@ -1,0 +1,9 @@
+{% extends 'myapp/base.html' %}
+{% block container %}
+<div class="text-container">
+<div>
+Access Denied - You Do Not have permissions to Access This Page
+<div><a href="{% url 'login' %}">Go To Log in</a></div>
+</div>
+</div>
+{% endblock container %}

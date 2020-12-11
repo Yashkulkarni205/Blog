@@ -1,0 +1,12 @@
+{% extends 'myapp/base.html' %}
+{% block container %}
+<div class="article-container">
+{% for article in articles %}
+<div class='article'>
+    <img onclick="location.href='{% url 'detail-article' article.id %}'" src="{{ article.image.url }}" alt="">
+    <span onclick="location.href='{% url 'detail-article' article.id %}'" >{{ article.name }}</span>
+</div>
+{% endfor %}
+</div>
+
+{% endblock container %}

@@ -1,0 +1,276 @@
+*
+{
+    transition: height 0.66s ease-in;
+    transition: width 0.66s ease-in;
+}
+
+
+/* base navigation */
+
+nav
+{  
+    background-color: white;
+    position: absolute;
+    width: 99vw;
+    border-bottom: 1px solid #0000007e;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li
+{   
+    list-style: none;
+}
+
+nav a
+{
+    padding: 14px;
+    text-decoration: none;
+    color: #000;
+    font: 1.1em Verdana;
+}
+
+nav li a:hover
+{   
+    color: rgb(0, 132, 255);
+}
+
+/* article container */
+
+.article-container
+{
+    font: 20px Verdana;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-container .article
+{
+    cursor: pointer;
+    margin: 30px;
+}
+
+.article-container span
+{
+    display: block;
+    text-align: center;
+    margin: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* forms container */
+
+.form-container
+{
+    width: 100%;
+    height: 97vh;
+    background-image: linear-gradient(to right top, #11a9c9, #219ae3, #857ee2, #cc50b6, #eb1267);
+}
+
+.form-container>div{
+    border-radius: 7px;
+    padding: 18px;
+    width: 70%;
+    background: rgb(255,255,255);
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    left: 15%;
+}
+
+
+.field
+{
+    margin: 20px;
+}
+
+.label
+{   
+    text-transform: capitalize;
+    font: 20px Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.field input,textarea
+{
+    border: none;
+    border-bottom: 1px solid rgb(163, 163, 163);
+    width: 100%;
+    font-size: 18px;
+}
+
+.field input:focus, .field textarea:focus
+{
+    outline: none;
+}
+
+form #button
+{
+    text-align: center;
+}
+
+form #button button
+{
+    border: 3px solid rgb(0, 132, 255);
+    font-size: 20px;
+    padding: 12px 40px;
+    border-radius: 30px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+}
+
+form #button button:hover
+{
+    border: 3px solid rgb(0, 132, 255);
+    background-color: white;
+    color: rgb(0, 132, 255);
+}
+
+.form-container a
+{
+    font: 1em sans-serif;
+    text-decoration: none;
+    color: rgb(131, 131, 131);   
+}
+
+form #button>div
+{
+    margin: 6px;
+}
+
+button:focus
+{
+    outline: none;
+}
+
+form p
+{
+    font: 1em sans-serif;
+    color: red;
+}
+
+/* messages  */
+.success
+{
+    font: 25px Arial;
+    text-align: center;
+    padding: 4px;
+    position: absolute;
+    background: rgb(94, 206, 94);
+    color: green;
+    border: 3px solid green;
+    width: 98%;
+}
+
+
+/* Normal container  */
+
+.text-container
+{
+    width: 100%;
+    height: 97vh;
+    background-image:linear-gradient(to right top, #c9b311, #f6771c, #ff145e, #d800ab, #1245eb);
+}
+
+.text-container>div{
+    border-radius: 7px;
+    padding: 18px;
+    width: 70%;
+    background: rgb(255,255,255);
+    position: absolute;
+    top: 54%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    text-align: center;
+    font: 20px Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-container a
+{
+    margin-top: 15px;
+    display: inline-block;
+    background-color: rgb(57, 77, 94);
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px 40px;
+    border-radius: 30px;
+}
+
+.text-container button
+{
+    cursor: pointer;
+    margin: 10px;
+    border: 3px solid rgb(204, 24, 0);
+    font-size: 20px;
+    padding: 12px 40px;
+    border-radius: 30px;
+    background-color: rgb(204, 24, 0);
+    color: white;
+}
+
+.text-container button:hover
+{
+    background-color: white;
+    color:rgb(204, 24, 0);
+}
+
+/* Detail container */
+
+.detail-container
+{
+    width: 100%;
+    height: 97vh;
+    background-image: linear-gradient(to right top, #11a9c9, #219ae3, #857ee2, #cc50b6, #eb1267);
+    
+}
+
+.detail-container>div
+{
+    border-radius: 10px;
+    padding: 18px;
+    background: rgb(255,255,255);
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 70vh;
+    width: 60%;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 40% 58%;
+    gap: 20px;
+    font: 20px Verdana;
+}
+
+.detail-container>div a
+{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 15px 0px;
+}
+
+.detail-container>div img
+{
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
