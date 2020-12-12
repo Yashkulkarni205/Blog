@@ -9,9 +9,6 @@
 
 nav
 {  
-    background-color: white;
-    position: absolute;
-    width: 99vw;
     border-bottom: 1px solid #0000007e;
 }
 
@@ -242,7 +239,7 @@ form p
     width: 60%;
     overflow-y: auto;
     display: grid;
-    grid-template-columns: 40% 58%;
+    grid-template-columns: 39% 58%;
     gap: 20px;
     font: 20px Verdana;
 }
